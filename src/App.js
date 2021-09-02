@@ -10,7 +10,7 @@ form.addEventListener("submit", event =>{
     alert("Cantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
     "\n Impuesto(predeterminado): "+impuesto*100+"%"+
-    "\n Estado ingresado: "+estado.value);
+    "\n Estado ingresado: "+Impuesto.value);
     var precioTotal = cantidad.value * precio.value;
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
     alert("Precio total: "+precioTotal+"\nPrecio total con impuesto: "+precioTotalConImpuesto);
