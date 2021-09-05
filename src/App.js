@@ -53,16 +53,16 @@ form.addEventListener("submit", event =>{
     "\nDescripcion del producto: "+descripcion.value+
     "\nCantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
-    "\n Impuesto: "+impuesto*100+"%"+
-    "\n Estado ingresado: "+estado.value);   
+    "\nImpuesto: "+impuesto*100+"%"+
+    "\nEstado ingresado: "+estado.value);   
     var precioTotal = cantidad.value * precio.value;
     descuento = descuentoPorPrecioTotal(precioTotal);
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
     var precioTotalConDescuento = precioTotal - descuento*precioTotal; 
     var precioTotalConImpuestoyDescuento = precioTotalConDescuento + impuesto*precioTotalConDescuento;
-    alert("Precio total: "+precioTotal+
-    "\n Descuento: "+descuento*100+"%"+
-    "\nPrecio total con impuesto: "+precioTotalConImpuesto+
-    "\nPrecio total con descuento: "+precioTotalConDescuento+
-    "\nPrecio total con impuesto y descuento: "+precioTotalConImpuestoyDescuento);
+    alert("Precio: "+precioTotal+
+    "\nDescuento: "+descuento*precioTotal+
+    //"\nPrecio total con impuesto: "+precioTotalConImpuesto+
+    //"\nPrecio total con descuento: "+precioTotalConDescuento+
+    "\nPrecio total: "+precioTotalConImpuestoyDescuento);
 })
