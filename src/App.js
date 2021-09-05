@@ -4,7 +4,7 @@ const estado = document.querySelector("#estado-input")
 const form = document.querySelector("#totalizador-form");
 
 var impuesto = 0.0825; //california
-var descuento = 0.05 //5% predeterminado
+var descuento = 0;
 
 function impuestoPorEstado(){
     var impuestoEstado = impuesto;
@@ -27,20 +27,37 @@ function impuestoPorEstado(){
     return impuestoEstado;
 }
 
+function descuentoPorPrecioTotal(precioTotal){
+    var descuentoPrecio = descuento;
+    if (precioTotal >= 1000){
+        descuentoPrecio = 0.03;
+    }else if(precioTotal >= 3000){
+        descuentoPrecio = 0.05;
+    }else if(precioTotal >= 7000){
+        descuentoPrecio = 0.07;
+    }else if(precioTotal >= 10000){
+        descuentoPrecio = 0.1;
+    }else if(precioTotal >= 30000){
+        descuentoPrecio = 0.15;
+    }
+    return descuentoPrecio;
+}
+
 form.addEventListener("submit", event =>{
     event.preventDefault();
     impuesto = impuestoPorEstado();
     alert("Cantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
     "\n Impuesto: "+impuesto*100+"%"+
-    "\n Estado ingresado: "+estado.value+
-    "\n Descuento: "+descuento*100+"%");
+    "\n Estado ingresado: "+estado.value);   
     var precioTotal = cantidad.value * precio.value;
+    descuento = descuentoPorPrecioTotal(precioTotal);
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
     var precioTotalConDescuento = precioTotal - descuento*precioTotal; 
-    var precioTotalConImpuestoyDescuento = precioTotalConDescuento + impuesto*precioTotalConDescuento;
+    //var precioTotalConImpuestoyDescuento = precioTotalConDescuento + impuesto*precioTotalConDescuento;
     alert("Precio total: "+precioTotal+
+    "\n Descuento: "+descuento*100+"%"+
     "\nPrecio total con impuesto: "+precioTotalConImpuesto+
-    "\nPrecio total con descuento: "+precioTotalConDescuento+
-    "\nPrecio total con impuesto y descuento: "+precioTotalConImpuestoyDescuento);
+    "\nPrecio total con descuento: "+precioTotalConDescuento);//+
+    //"\nPrecio total con impuesto y descuento: "+precioTotalConImpuestoyDescuento);
 })
