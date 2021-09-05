@@ -54,10 +54,10 @@ form.addEventListener("submit", event =>{
     descuento = descuentoPorPrecioTotal(precioTotal);
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
     var precioTotalConDescuento = precioTotal - descuento*precioTotal; 
-    //var precioTotalConImpuestoyDescuento = precioTotalConDescuento + impuesto*precioTotalConDescuento;
+    var precioTotalConImpuestoyDescuento = precioTotalConDescuento + impuesto*precioTotalConDescuento;
     alert("Precio total: "+precioTotal+
     "\n Descuento: "+descuento*100+"%"+
     "\nPrecio total con impuesto: "+precioTotalConImpuesto+
-    "\nPrecio total con descuento: "+precioTotalConDescuento);//+
-    //"\nPrecio total con impuesto y descuento: "+precioTotalConImpuestoyDescuento);
+    "\nPrecio total con descuento: "+precioTotalConDescuento+
+    "\nPrecio total con impuesto y descuento: "+precioTotalConImpuestoyDescuento);
 })
