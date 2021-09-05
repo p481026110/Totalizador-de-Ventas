@@ -4,6 +4,7 @@ const estado = document.querySelector("#estado-input")
 const form = document.querySelector("#totalizador-form");
 
 var impuesto = 0.0825; //california
+var descuento = 0.05 //5% predeterminado
 
 function impuestoPorEstado(){
     var impuestoEstado = impuesto;
@@ -32,8 +33,12 @@ form.addEventListener("submit", event =>{
     alert("Cantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
     "\n Impuesto: "+impuesto*100+"%"+
-    "\n Estado ingresado: "+estado.value);
+    "\n Estado ingresado: "+estado.value+
+    "\n Descuento: "+descuento*100+"%");
     var precioTotal = cantidad.value * precio.value;
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
-    alert("Precio total: "+precioTotal+"\nPrecio total con impuesto: "+precioTotalConImpuesto);
+    var precioTotalConDescuento = precioTotal - descuento*precioTotal; 
+    alert("Precio total: "+precioTotal+
+    "\nPrecio total con impuesto: "+precioTotalConImpuesto+
+    "\nPrecio total con descuento: "+precioTotalConDescuento);
 })
