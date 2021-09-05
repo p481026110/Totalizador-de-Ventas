@@ -1,4 +1,5 @@
 const nombre = document.querySelector("#nombre-input")
+const descripcion = document.querySelector("#descripcion-input")
 const cantidad = document.querySelector("#cantidad-input");
 const precio = document.querySelector("#precio-input")
 const estado = document.querySelector("#estado-input")
@@ -48,6 +49,7 @@ form.addEventListener("submit", event =>{
     event.preventDefault();
     impuesto = impuestoPorEstado();
     alert("\nNombre del producto: "+nombre.value+
+    "\nDescripcion del producto: "+descripcion.value+
     "\nCantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
     "\n Impuesto: "+impuesto*100+"%"+
