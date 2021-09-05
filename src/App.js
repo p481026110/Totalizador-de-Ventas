@@ -1,3 +1,4 @@
+const nombre = document.querySelector("#nombre-input")
 const cantidad = document.querySelector("#cantidad-input");
 const precio = document.querySelector("#precio-input")
 const estado = document.querySelector("#estado-input")
@@ -46,7 +47,8 @@ function descuentoPorPrecioTotal(precioTotal){
 form.addEventListener("submit", event =>{
     event.preventDefault();
     impuesto = impuestoPorEstado();
-    alert("Cantidad ingresada: "+ cantidad.value+ 
+    alert("\nNombre del producto: "+nombre.value+
+    "\nCantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
     "\n Impuesto: "+impuesto*100+"%"+
     "\n Estado ingresado: "+estado.value);   
