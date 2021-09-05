@@ -38,7 +38,9 @@ form.addEventListener("submit", event =>{
     var precioTotal = cantidad.value * precio.value;
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
     var precioTotalConDescuento = precioTotal - descuento*precioTotal; 
+    var precioTotalConImpuestoyDescuento = precioTotalConDescuento + impuesto*precioTotalConDescuento;
     alert("Precio total: "+precioTotal+
     "\nPrecio total con impuesto: "+precioTotalConImpuesto+
-    "\nPrecio total con descuento: "+precioTotalConDescuento);
+    "\nPrecio total con descuento: "+precioTotalConDescuento+
+    "\nPrecio total con impuesto y descuento: "+precioTotalConImpuestoyDescuento);
 })
