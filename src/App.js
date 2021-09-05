@@ -48,7 +48,8 @@ function descuentoPorPrecioTotal(precioTotal){
 form.addEventListener("submit", event =>{
     event.preventDefault();
     impuesto = impuestoPorEstado();
-    alert("\nNombre del producto: "+nombre.value+
+    alert("Fecha: "+ new Date()+ 
+    "\nNombre del producto: "+nombre.value+
     "\nDescripcion del producto: "+descripcion.value+
     "\nCantidad ingresada: "+ cantidad.value+ 
     "\nPrecio del item: "+precio.value+
