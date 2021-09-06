@@ -1,0 +1,101 @@
+[33mcommit 6716efd06e6f1dc17167bbc7bf2a3f56414e94d6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:57:58 2021 -0200
+
+    Mejorar la interfaz
+
+[33mcommit c1635a49e8a151759f6eed6c9ed56f3a6ad523aa[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:28:05 2021 -0200
+
+    Visualizar informacion completa con fecha y hora
+
+[33mcommit 09d691ed5455c76cb0ab729c9b0b5a7d1be541bc[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:25:57 2021 -0200
+
+    Descripcion del producto
+
+[33mcommit bb5d57d20733997dcb2d85403e8b4b18025952d9[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:24:02 2021 -0200
+
+    Nombre del producto
+
+[33mcommit f0ae564995ef890664bbc2f1ab6f138b018388e2[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:20:35 2021 -0200
+
+    Precio final con descuento e impuesto correspondiente
+
+[33mcommit ffe7c7ae1841d5aba9ce9c6ec9904e9ad986b6a6[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:18:19 2021 -0200
+
+    Precio final con descuento correspondiente
+
+[33mcommit 3ccdd8290aa36f202240691ea5d61e03bc769e85[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:08:48 2021 -0200
+
+    Precio final con impuesto y descuento predeterminado
+
+[33mcommit 98363dfe9f423098d7ba7172183ecc5ce866b85c[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 16:05:26 2021 -0200
+
+    Precio final con descuento predeterminado
+
+[33mcommit c86f3ecbf89126f6431d6e1f0a96c88492d87232[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Sun Sep 5 15:29:00 2021 -0200
+
+    Precio con impuesto de estado seleccionado
+
+[33mcommit 33d46c6789f62781322485ba60863a61b1fd8dd1[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 09:53:25 2021 -0200
+
+    Estados desde Select
+
+[33mcommit ef91de9c6b470812384eb9b90c471fe6f683301c[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 09:39:12 2021 -0200
+
+    EstadoManual
+
+[33mcommit 0fbf3bbb91d9618febdbfb823091e78fc8e38385[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 09:26:14 2021 -0200
+
+    precio total con impuesto predeterminado
+
+[33mcommit 7fa6e6bfdf8c7c48bd3f00f6ab21c385e15d00c8[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 09:19:36 2021 -0200
+
+    Precio total
+
+[33mcommit 70cfb0e91d96350c31e4c2b8fc58582754a17e4d[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 09:06:10 2021 -0200
+
+    A_Precio
+
+[33mcommit 846c67f5873f4d9c6920e66a4146d74d89be30a9[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 09:02:58 2021 -0200
+
+    +Precio
+
+[33mcommit 85f2b032e45dca3ace4112b7879d703ef40b8fc1[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 08:55:59 2021 -0200
+
+    1 Visualizar cantidad
+
+[33mcommit 365829ba9f24e4448fdb30d455bcd263c26d36be[m
+Author: tiaraRS <74866417+tiaraRS@users.noreply.github.com>
+Date:   Thu Sep 2 08:40:43 2021 -0200
+
+    agregue archivos base
